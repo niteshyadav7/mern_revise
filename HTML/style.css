@@ -1,0 +1,13 @@
+body {
+  color: whitesmoke;
+  background-color: #000;
+}
+
+table,
+td,
+tr,
+caption,
+th {
+  border: 2px solid red;
+  border-collapse: collapse;
+}
