@@ -1,0 +1,59 @@
+body {
+  background-image: url(./download.jpg);
+  background-repeat: repeat;
+  backface-visibility: hidden;
+}
+.list {
+  list-style: none;
+  display: flex;
+}
+.list > li {
+  margin: 35px;
+}
+
+.header {
+  display: inline;
+}
+.list li {
+  font-size: 100px;
+  color: red;
+}
+.header main {
+  color: green;
+  font-size: 200px;
+}
+div ~ p {
+  color: red;
+}
+
+div p:first-child {
+  color: yellow;
+}
+.static {
+  position: static;
+  border: 3px solid #73ad21;
+  left: 100px;
+}
+.relative {
+  position: relative;
+  border: 3px solid #73ad21;
+  left: 100px;
+}
+.fixed {
+  border: 2px solid red;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+#fixed {
+  display: inline-block;
+  padding: 5px;
+  position: fixed;
+  border: 2px solid red;
+
+  background-color: yellow;
+  /* top: 0; */
+  bottom: 0;
+  right: 0;
+}

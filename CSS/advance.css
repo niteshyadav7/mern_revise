@@ -1,0 +1,11 @@
+.translate {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  border: 2px solid black;
+  background-color: red;
+  padding: 32px;
+}
+.translate:hover {
+  transform: scale(2, 3);
+}
