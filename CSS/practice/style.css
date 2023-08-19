@@ -1,29 +1,79 @@
-/* simple selector */
 * {
-  text-align: center;
-  padding: 2px;
-  margin: 2px;
   margin: 0;
   padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  padding: 60px;
+  background-color: rgb(32, 125, 219);
+}
+.header > p {
+  padding: 20px;
+  font-weight: 500;
+}
+.nav {
   background-color: #000;
   color: whitesmoke;
 }
-/* combinator selector */
+ul {
+  display: flex;
+  margin-left: 10px;
+}
 
-/* 1.decentdent selector */
-.box div {
-  background-color: red;
+a:visited {
+  color: slateblue;
 }
-/* 2.child selector */
-.box > div {
-  background-color: green;
+a:hover {
+  color: slateblue;
 }
-/* 3.adjacent siblings */
-.box + div {
-  background-color: yellow;
-  color: red;
+a:active {
+  color: slateblue;
 }
-.box~div{
-    background-color: blue;
-    color: aqua;
+ul > li {
+  list-style: none;
+  padding: 20px;
+  color: whitesmoke;
+  margin-right: 32px;
+  font-size: large;
+  font-weight: 800;
+}
+ul > li:hover {
+  background-color: antiquewhite;
+}
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+.side {
+  flex: 30%;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+}
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width:700px){
+    .row,.nav{
+        flex-direction: column;
+    }
 }
