@@ -1,3 +1,76 @@
+// closer look to Function::
+
+/**
+const lufthansa = {
+  airLine: "lufthansa",
+  iataCode: "LH",
+  bookings: [],
+  // book:function(){}
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airLine} flight ${this.iataCode}${flightNum}`
+    );
+  },
+};
+lufthansa.book(234, "Nitesh Yadav!");
+ */
+
+/**
+const lufthansa = {
+  airline: "Lufthansa",
+  iataCode: "LH",
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum} , ${name}` });
+  },
+};
+
+lufthansa.book(234, "Nitesh Yadav");
+lufthansa.book(235, "Golu Yadav");
+console.log(lufthansa.bookings);
+//  */
+
+// const lufthansa = {
+//   airline: "Lufthansa",
+//   iataCode: "LH",
+//   bookings: [],
+//   book(flightNum, name) {
+//     // console.log(
+//     //   `${name} booked a seat ${this.airline} flight ${this.iataCode}${this.flightNum}`
+//     // );
+//     this.bookings.push({
+//       flight: `${this.iataCode}${flightNum}, Name:${name}`,
+//     });
+//   },
+// };
+
+// const eurowings = {
+//   airline: "Eurowings",
+//   iataCode: "EW",
+//   bookings: [],
+// };
+
+// const book = lufthansa.book;
+
+// book.call(lufthansa, 234, "Nitesh Yadav");
+// book.call(lufthansa, 234, "Neha Yadav");
+// console.log(lufthansa);
+// book.call(eurowings, 235, "Golu Yadav");
+// book.call(eurowings, 235, "Pooja Yadav");
+// console.log(eurowings);
+
+// book.apply(lufthansa, [237, "Naman"]);
+// console.log(lufthansa);
+
+// Bind Method::
+
+// const bookLH = book.bind(lufthansa);
+// bookLH(23,"Nitesh")
+// console.log(lufthansa);
+
 // getName();
 // console.log(x);
 // var x = 4;
@@ -266,3 +339,105 @@
 // });
 
 // lotteryTicket.then((res) => console.log(res)).catch((err) => console.log(err));
+
+// function
+
+// CLASS::
+
+// class PersonalCl {
+//   constructor(firstName, birthYear) {
+//     this.firstName = firstName;
+//     this.birthYear = birthYear;
+//   }
+//   calcAge() {
+//     console.log(2023 - `${this.birthYear}`);
+//   }
+//   get age() {
+//     return 2023 - `${this.birthYear}`;
+//   }
+// }
+
+// PersonalCl.prototype.greet = function () {
+//   console.log(`Hey ${this.firstName}`);
+// };
+
+// const jessica = new PersonalCl("Jessica", 2000);
+// console.log(jessica.age);
+// jessica.calcAge();
+// jessica.greet();
+// console.log(jessica);
+
+// Class ::
+
+// class CarCl {
+//   constructor(make, speed) {
+//     this.make = make;
+//     this.speed = speed;
+//   }
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(`${this.make} is going at ${this.speed} km/h`);
+//   }
+//   brake() {
+//     this.speed -= 5;
+//     console.log(`${this.make} is going at ${this.speed} km/h`);
+//   }
+
+//   get speedUs() {
+//     return this.speed;
+//   }
+
+//   set speedUs(speed) {
+//     this.speed = speed * 1.6;
+//   }
+//   static hey() {
+//     console.log("Hey");
+//   }
+// }
+
+// const ford = new CarCl("Ford", 120);
+// ford.accelerate();
+// ford.brake();
+// ford.speedUs = 50;
+// console.log(ford.speedUs);
+// CarCl.hey()
+
+// GETTER SETTER STATIC
+
+class CarCL {
+  constructor(make, speed) {
+    this.speed = speed;
+    this.make = make;
+  }
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} going with the speed of ${this.speed}`);
+  }
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.speed} going with the spedd of ${this.speed}`);
+  }
+  static hey() {
+    console.log(`Hey!,👋`);
+  }
+  get speedUs() {
+    return this.speed * 1.6;
+  }
+  set speedUs(speed) {
+    this.speed = speed / 1.6;
+  }
+}
+
+const ford = new CarCL("Ford", 120);
+console.log(ford);
+
+// METHOD:
+ford.accelerate();
+ford.brake();
+
+// Static method ::
+CarCL.hey();
+
+// setter and getter
+ford.speed = 50;
+console.log(ford.speedUs);
