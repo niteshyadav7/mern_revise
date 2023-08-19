@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Nitesh Yadav" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <title>Practice Page</title>
+    <link rel="stylesheet" href="practice.css" />
+    <style>
+      table,
+      caption,
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- when you define a section then it should be BLOCK-->
+    <!-- when you define a text then it should be inline-block -->
+    <!-- try to box model -->
+    <header>
+      <nav class="nav">
+        <ul class="nav1">
+          <li>
+            <a href="#">Home </a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">InstaMart</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="body">
+      <aside class="aside">
+        <p>This is the first para of left side</p>
+        <p>This is the first para of left side</p>
+        <p>This is the first para of left side</p>
+        <p>This is the first para of left side</p>
+        <p>This is the first para of left side</p>
+        <p>This is the first para of left side</p>
+        <p>This is the first para of left side</p>
+      </aside>
+      <main class="main1">
+        <article>
+          <details>
+            <summary>Order List</summary>
+            <ol>
+              <li>This is the main list of ordered list</li>
+              <li>This is the main list of ordered list</li>
+              <li>This is the main list of ordered list</li>
+              <li>This is the main list of ordered list</li>
+              <li>This is the main list of ordered list</li>
+            </ol>
+          </details>
+        </article>
+        <article>
+          <details>
+            <summary>Unorder List</summary>
+            <ul>
+              <li>This is the main list of unordered list</li>
+              <li>This is the main list of unordered list</li>
+              <li>This is the main list of unordered list</li>
+              <li>This is the main list of unordered list</li>
+              <li>This is the main list of unordered list</li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <details>
+            <summary>Deatail List</summary>
+            <details>
+              <summary><dt>Cars</dt></summary>
+              <dl>Cars are luxury</dl>
+              <dl>Cars are luxury</dl>
+              <dl>Cars are luxury</dl>
+              <dl>Cars are luxury</dl>
+            </details>
+            <details>
+              <summary><dt>Bikes</dt></summary>
+              <dl>Cars are luxury</dl>
+              <dl>Cars are luxury</dl>
+              <dl>Cars are luxury</dl>
+              <dl>Cars are luxury</dl>
+            </details>
+          </details>
+        </article>
+        <article>
+          <details>
+            <summary>Table</summary>
+            <table>
+              <caption>
+                Our Tacos
+              </caption>
+              <thead>
+                <tr>
+                  <th>Tacos</th>
+                  <th><abbr title="Quantity">QTY</abbr></th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="3">Crunchy</th>
+                  <td>1</td>
+                  <td>$1.50</td>
+                </tr>
+                <tr>
+                  <!-- <th>Crunchy</th> -->
+                  <td>2</td>
+                  <td>$2.50</td>
+                </tr>
+                <tr>
+                  <!-- <th>Crunchy</th> -->
+                  <td>3</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <th rowspan="3">Soft</th>
+                  <td>1</td>
+                  <td>$4.10</td>
+                </tr>
+                <tr>
+                  <!-- <th>Soft</th> -->
+                  <td>2</td>
+                  <td>$5.10</td>
+                </tr>
+                <tr>
+                  <!-- <th>Soft</th> -->
+                  <td>3</td>
+                  <td>$2.10</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">Chips & Salasa $2.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </details>
+        </article>
+      </main>
+      <aside class="aside">
+        <figure>
+          <img
+            width="15%"
+            height="15%"
+            src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+            alt="img"
+          />
+          <figcaption>Alone Tree</figcaption>
+        </figure>
+      </aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

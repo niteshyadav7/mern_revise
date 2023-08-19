@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="author" content="Nitesh Yadav" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="advance.css" /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form</title>
   </head>
   <body>
-    
+    <form>
+      <fieldset>
+        <legend>Personal Data</legend>
+        <label for="fullName">Full Name :</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="Enter Name"
+        /><br /><br />
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Email"
+        /><br /><br />
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        /><br /><br />
+        <label for="cPassword">Confirm Password :</label>
+        <input
+          type="password"
+          name="cPassword"
+          id="cPassword"
+          placeholder="Enter Confirm Password"
+        />
+        <br /><br />
+        <label for="checkBox">Which is Your Favorite ?</label>
+        <input type="checkbox" name="checkBox" id="checkBox" /><label
+          for="checkBox"
+          >HTML</label
+        >
+        <input type="checkbox" name="checkBox" id="checkBox" />
+        <label for="checkBox">CSS</label>
+        <br /><br />
+        <label for="radio">Enter Your Gender ?</label>
+        <input type="radio" name="radio" id="radio" />
+        <label for="radio">Male</label>
+        <!-- <label for="radio">Enter Your Gender ?</label> -->
+
+        <input type="radio" name="radio" id="radio" />
+        <label for="radio">Female</label>
+        <br /><br />
+        <label for="textArea">Text Area :</label>
+        <br />
+        <textarea name="textArea" id="" cols="30" rows="10">
+Enter FeedBAck</textarea
+        >
+        <br /><br />
+        <select name="car" id="car">
+            <optgroup label="Cars">
+          <option value="hundai">Hundai</option>
+          <option value="nexon">Nexon</option>
+          <option value="celrio">Celerio</option>
+        </optgroup>
+            <optgroup label="Trucks">
+          <option value="hundai">Hundai</option>
+          <option value="nexon">Nexon</option>
+          <option value="celrio">Celerio</option>
+        </optgroup>
+        </select>
+      </fieldset>
+    </form>
   </body>
 </html>

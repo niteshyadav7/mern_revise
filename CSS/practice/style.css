@@ -1,0 +1,29 @@
+/* simple selector */
+* {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: whitesmoke;
+}
+/* combinator selector */
+
+/* 1.decentdent selector */
+.box div {
+  background-color: red;
+}
+/* 2.child selector */
+.box > div {
+  background-color: green;
+}
+/* 3.adjacent siblings */
+.box + div {
+  background-color: yellow;
+  color: red;
+}
+.box~div{
+    background-color: blue;
+    color: aqua;
+}
